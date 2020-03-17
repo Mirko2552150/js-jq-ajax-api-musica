@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #666666;
+    color: black;
     font-family: sans-serif;
 }
 
@@ -36,13 +36,14 @@ header img {
     padding: 100px;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .scheda {
     flex-basis: 200px;
     height: 320px;
-    background-color: #76868b;
-    border-radius: 10px;
+    background-color: #cdcdcd;
+    border-radius: 5.5px;
     margin: 10px;
     cursor: pointer;
     display: flex;
@@ -52,15 +53,26 @@ header img {
 
 }
 
+.scheda h4 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.scheda span {
+    margin-top: 5px;
+}
+
+
+
 .scheda:hover {
     transform: scale(1.02);
 }
 
 .scheda img {
     width: 180px;
-    border-radius: 10px;
-    padding-bottom: 20px;
-    background-color: white;
+    height: 180px;
+    border-radius: 5.5px;
+
 }
 
 select {

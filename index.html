@@ -11,31 +11,31 @@
         <header>
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FI%2F51rttY7a%252B9L.png&f=1&nofb=1">
             <!-- con select creiamo un menu a scelta multipla, nel valore inseriamo il nome del genere x il check successivo -->
-            <select class="selettore" name="">
-                <option value="">Scegli genere</option>
+            <select class="selettore-kind" name="">
+                <option value="">Select Kind</option>
                 <option value="pop">pop</option>
                 <option value="jazz">jazz</option>
                 <option value="metal">metal</option>
                 <option value="rock">rock</option>
             </select>
+            <datalist class="selettore">
+
+            </datalist>
         </header>
         <div class="container">
-            <div class="gabbia">
-
-            </div>
+            <div class="gabbia"></div>
         </div>
 
         <script id="template-scheda" type="text/x-handlebars-template">
             <div class="scheda" data-scheda:"{{numeroData}}">
                 <img src="{{immagineAlbum}}" alt="{{immagineAlbum}}">
-                <h1>{{titoloAlbum}}</h1>
+                <h4>{{titoloAlbum}}</h4>
                 <span>{{artista}}</span>
-                <span>{{anno}}</span>
+                <span><small>{{anno}}</small></span>
             </div>
         </script>
 
         <script src="js/main.js" charset="utf-8"></script>
     </body>
-
 
 </html>
