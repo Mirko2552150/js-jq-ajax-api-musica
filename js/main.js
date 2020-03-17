@@ -5,11 +5,23 @@
 
 
 
-// L'evento change si verifica quando il valore di un elemento è stato modificato 
+// L'evento change si verifica quando il valore di un elemento è stato modificato
 // (funziona solo su <input>, <textarea> e <select> elementi).
 $(".selettore-kind").change(function(){
     var opzioneSel = $(this).val(); // mettiamo in variabile l'opzione selezionata
     console.log(opzioneSel);
+    if (opzioneSel == "") { // se opzione non ha valore
+        $(".scheda").show(); // mostra tutti
+    } else {
+        $(".scheda").each(function(){ // cicla su tutte le schede
+            // metto tutto in minuscolo
+            if (opzioneSel.toLowerCase() == $(this).data("genere").toLowerCase()) { // this sta per il selezionato = al data che abbiamo inserito nell HTML, richiamando DATA e ("") il valore
+                $(this).show(); // quelli = si vedranno
+            } else {
+                $(this).hide(); // altrimenti show hide
+            }
+        });
+    }
 });
 
 
