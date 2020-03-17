@@ -3,8 +3,6 @@
 // Bonus: Creare una select con i seguenti generi: pop, rock, metal e jazz.
 // In base a cosa scegliamo nella select vedremo i corrispondenti cd.
 
-
-
 // L'evento change si verifica quando il valore di un elemento è stato modificato
 // (funziona solo su <input>, <textarea> e <select> elementi).
 $(".selettore-kind").change(function(){
@@ -24,7 +22,6 @@ $(".selettore-kind").change(function(){
         });
     }
 });
-
 
 // chiamata con AJAX (JQUERY) all'API boolean
 $.ajax({
