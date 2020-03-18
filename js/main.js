@@ -9,6 +9,7 @@
 // (funziona solo su <input>, <textarea> e <select> elementi).
 $(".selettore-kind").change(function(){
     var opzioneSel = $(this).val(); // mettiamo in variabile l'opzione selezionata
+    console.log(this);
     console.log(opzioneSel);
     if (opzioneSel == "") { // se opzione non ha valore
         $(".scheda").show(); // mostra tutti
