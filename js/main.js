@@ -44,7 +44,7 @@ $.ajax({
             };
             // console.log(albumTemplate);
             var templatePop = template(albumTemplate); // popolo con il template con le le chiavi degli oggetti(album)
-            $(".gabbia").append(templatePop);
+            $(".gabbia").append(templatePop); // inseriamo il ns Template popolato nell HTML
         }
 
     },
