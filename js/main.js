@@ -53,13 +53,5 @@ $.ajax({
     }
 });
 
-
-
-
-
-
-
-
-
 var source =  $('#template-scheda').html();  // con JQ inserisco ID template creato in HTML
 var template = Handlebars.compile(source);   // HB lo gestisce
