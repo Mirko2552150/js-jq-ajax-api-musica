@@ -49,7 +49,7 @@ $.ajax({
 
     },
     error: function() {
-        alert("ERROR");
+        alert("ERROR 404");
     }
 });
 
